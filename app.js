@@ -8,7 +8,7 @@ document.getElementById("feedback-button").addEventListener("click", function(ev
     mode: 'no-cors'
   })
     .then(response => response.text())
-    .then(data => console.log("Redirect submitted!"))
+    .then(() => console.log("Redirect submitted!"))
     .catch(error => console.error("Error:", error));
 
   window.location.href='feedback.html';
@@ -22,6 +22,6 @@ window.addEventListener("load", function() {
     mode: 'no-cors'
   })
     .then(response => response.text())
-    .then(data => console.log("Visit submitted!"))
+    .then(() => console.log("Visit submitted!"))
     .catch(error => console.error("Error:", error));
 });

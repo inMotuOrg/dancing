@@ -13,7 +13,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     mode: 'no-cors'
   })
     .then(response => response.text())
-    .then(data => alert("Contact saved!"))
+    .then(() => alert("Contact saved!"))
     .catch(error => console.error("Error:", error));
 });
 
