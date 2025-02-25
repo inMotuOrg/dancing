@@ -331,7 +331,8 @@ button:hover {
 }
 
 form {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin: 30px auto;
   text-align: left;
 }
@@ -345,3 +346,24 @@ input {
   padding: 0 10px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
